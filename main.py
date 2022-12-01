@@ -16,8 +16,8 @@ alumno_asignatura = []  # array.array()
 def main():
     load_alumnos()
     load_asignaturas()
-
-    seed = 135711
+    #IMPORTANTE! NUMERO SEED
+    seed = 12345
     count = 0
     for asignatura in asignaturas:
         for alumno in alumnos:
@@ -58,6 +58,7 @@ def draw_image():
 
 
 def load_alumnos():
+    #IMPORTANTE! RUTA DE ALUMNOS
     with open('/home/benaventi/Downloads/Alumnos.csv') as csv_file:
         csv_reader = csv.reader(csv_file)  # , delimiter=',')
         counter = 0
@@ -69,6 +70,7 @@ def load_alumnos():
 
 
 def load_asignaturas():
+    #IMPORTANTE! RUTA DE ASIGNATURAS
     with open('/home/benaventi/Downloads/Asignaturas.csv') as csv_file:
         csv_reader = csv.reader(csv_file)  # , delimiter=',')
         counter = 0
